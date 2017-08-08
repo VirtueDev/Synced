@@ -325,6 +325,25 @@ public class ProfileServlet extends MsoyServiceServlet
         //update the comment preference from the database
         _memberRepo.configureCommentPreference(memberId, allowFriendsOnly);
     }
+	
+	// from interface ProfileService
+    public void updateProfilePreference (int memberId, boolean allowFriendsOnly)
+        throws ServiceException
+    {
+        final MemberRecord _memberRec = _memberRepo.loadMember(memberId);
+        
+        //update the profile preference from the database
+        _memberRepo.configureProfilePreference(memberId, allowFriendsOnly);
+    }
+	
+	// from interface ProfileService
+    public boolean getProfilePreference (int memberId)
+        throws ServiceException
+    {
+        final MemberRecord _memberRec = _memberRepo.loadMember(memberId); //wall owner's MemberRecord
+        
+		return _memberRec.isSet(MemberRecord.Flag.FRIEND_PROFILE_ONLY); 
+    }
     
 
     // from interface ProfileService

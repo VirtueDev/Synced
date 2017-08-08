@@ -732,6 +732,16 @@ public class MemberRepository extends DepotRepository
 	storeFlags(mrec);
     }
 
+	 /**
+     * Configures a member's profile preference
+     */
+    public void configureProfilePreference (int memberId, boolean friendsOnly)
+    {
+        MemberRecord mrec = loadMember(memberId);
+	mrec.updateFlag(MemberRecord.Flag.FRIEND_PROFILE_ONLY, friendsOnly);
+	storeFlags(mrec);
+    }
+	
     /**
      * Writes the supplied member's flags to the database.
      */

@@ -149,6 +149,18 @@ public interface ProfileService extends RemoteService
      */
     void updateCommentPreference (int memberId, boolean allowFriendsOnly)
         throws ServiceException;
+		
+	 /**
+     * Updates the user's profile preference (public or friends only)
+     */
+	 void updateProfilePreference (int memberId, boolean allowFriendsOnly)
+		throws ServiceException;
+		
+	/**
+     * Gets the user's profile preference (public or friends only)
+     */
+	 boolean getProfilePreference (int memberId)
+		throws ServiceException;
 
     /**
      * Looks for profiles that match the specified search term. We'll aim to be smart about what we
