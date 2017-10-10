@@ -92,7 +92,10 @@ public class MemberRecord extends PersistentRecord
         IPBANNED(1 << 15),
 
          /** Whether this user has friends only commenting */
-        FRIEND_COMMENTS_ONLY(1 << 16);
+        FRIEND_COMMENTS_ONLY(1 << 16),
+		
+		/** Whether this user has friends only profile viewing */
+        FRIEND_PROFILE_ONLY(1 << 17);
 
 
         public int getBit () {
