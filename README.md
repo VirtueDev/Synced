@@ -1,31 +1,8 @@
 
-## Overview
-This is the source code to the [Synced] online virtual world platform.
-The Whirled code (forked to make Synced) is released under the BSD License. See the [LICENSE] file for details.
-
-[ActionScript]: http://www.adobe.com/devnet/actionscript.html
-[Ant]: http://ant.apache.org/
-[Flex]: http://www.adobe.com/devnet/flex.html
-[GWT]: http://www.gwtproject.org/
-[JDBC]: http://docs.oracle.com/javase/7/docs/technotes/guides/jdbc/
-[Java]: http://docs.oracle.com/javase/7/docs/
-[LICENSE]: https://github.com/greyhavens/msoy/blob/master/LICENSE
-[MySQL]: https://www.mysql.com/
-[Postgres]: http://www.postgresql.org/
-[Whirled]: http://whirled.com/
-[servlets]: http://www.oracle.com/technetwork/java/index-jsp-135475.html
-
-## In-Development
-[Errors]:
-- Parlor Games
-- Party Glitch (Probably an error with a .properties file)
-- Add an option in which players can only allow friends to comment on their walls
-
-[Implement]:
-- Music can no longer be listed in bars
-
-[Distant Future]:
-- HTML5 Creations
+## Documentation
+All documentation to setting-up and running this game is provided in this public Google Document:  
+https://docs.google.com/document/d/1Nb-FskkLhR7-32829tduDgb0a_Fo9ljx6qJB0XqXElc/edit?usp=sharing  
+Have fun :)!  
 
 ## Build Commands
 ```
@@ -48,7 +25,7 @@ Main targets:
  ant viewer        Build the viewer for the SDK.
 Default target: compile
 ```
-## Synced Update Commands
+## Glowbe Build Commands
 ```
  ant dist          Builds the MSOY .jar Files.
  ant asclient      Builds the Flash world client.
