@@ -18,11 +18,8 @@ The Whirled code (forked to make Synced) is released under the BSD License. See 
 ## In-Development
 [Errors]:
 - Parlor Games
-- Party Glitch (Probably an error with a .properties file)
-- Add an option in which players can only allow friends to comment on their walls
 
 [Implement]:
-- Music can no longer be listed in bars
 - Admin Approval System for items that are uploaded to synced.
 
 [Distant Future]:
@@ -66,3 +63,5 @@ Default target: compile
  sudo ./bin/burlserver  Starts the Bureau Server (Launcher Games)
  sudo fuser -n tcp -k 80 Turns off all servers running on port 80
 ```
+# Whirled Documentation
+Shadowsych and Cactus created a document that outlines how to create a Whirled server, read it here: https://docs.google.com/document/d/1Nb-FskkLhR7-32829tduDgb0a_Fo9ljx6qJB0XqXElc/edit?usp=sharing
